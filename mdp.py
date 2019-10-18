@@ -17,6 +17,9 @@ PolicyIterationModified
     Modified policy iteration MDP
 QLearning
     Q-learning MDP
+SpeedyQLearning(MDP)
+GSQL1
+GSQL2
 RelativeValueIteration
     Relative value iteration MDP
 ValueIteration
