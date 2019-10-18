@@ -9,7 +9,7 @@ import mdptoolbox, mdptoolbox.example
 import random
 
 s = 10
-a= 5
+a = 5
 discount = 0.6
 
 episodes = 100
@@ -46,6 +46,7 @@ for count in range(episodes):
     ql3.run()
     norm_diff_gsql2 = vi.V - ql3.q_values
     gsql2_total_diff[count] = np.linalg.norm(norm_diff_gsql2,axis =1)
+
 #Calculate average error and standard deviation    
 avg_error_sql=np.mean(sql_total_diff,axis=0)
 std_error_sql=np.std(sql_total_diff,axis=0)
